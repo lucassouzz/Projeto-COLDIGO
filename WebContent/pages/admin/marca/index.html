@@ -1,0 +1,93 @@
+<script src="../../js/marca.js"></script>
+
+
+<h2>Registro das marcas</h2>
+
+<form name="frmAddMarca" id="addMarca" class="frmInserir">
+	<fieldset>
+	
+	
+		<legend>Nova Marca</legend>
+		<table>
+		
+		
+			<tr>
+				<th>Marca</th>
+				<td>
+					<td>
+						<input type="text" name="nome">
+					</td>
+				</td>			
+			</tr>
+			
+			<tr>
+			
+				<td>
+					&nbsp;
+				</td>
+				<td>
+					&nbsp;
+				</td>
+					<td>
+						 <button type="reset">Limpar</button> 
+						 <button type="button" onclick="COLDIGO.marca.cadastrar()">Cadastrar</button>
+												
+					</td>
+			</tr>			
+		
+		
+		
+		</table>
+	
+		
+	</fieldset>
+
+</form>
+
+<!-- Aqui vai a criação da busca -->
+
+<h3>Marcas Registradas</h3>
+
+<form id="filtraMarca" class="frmFiltrar">
+
+	<fieldset>
+		<legend>Filtrar</legend>
+		<input type="text" name="txtbusca" id="campoBuscaMarca" placeholder="Pesquise pela marca"> 
+		<button type="button" onclick="COLDIGO.marca.buscar()">Buscar</button>
+	</fieldset>
+
+</form>
+
+<div id="listaMarcas" class="listaRegistros">
+
+</div> 
+
+
+<!-- ************ Editar **************** -->
+	
+	<div id="modalEditaMarca" class="modalEditar">
+		
+		<form name="frmEditaMarca" id="editaMarca" class="frmEditar">
+			<table>
+			
+				<tr>
+					<th>Marca</th>
+					<td>
+						<input type="text" name="nome">
+					</td>
+				</tr>			
+			</table>	
+			
+			<input type="hidden" name="idMarca">
+		
+		</form>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
